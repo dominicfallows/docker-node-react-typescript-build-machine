@@ -1,0 +1,13 @@
+{
+  "name": "docker-node-react-typescript-build-machine",
+  "version": "1.0.0",
+  "repository": "https://github.com/dominicfallows/docker-node-react-typescript-build-machine",
+  "author": "Dominic Fallows <consultant@dominicfallows.uk>",
+  "license": "MIT",
+  "scripts": {
+    "build": "docker-compose build",
+    "start": "docker-compose up -d",
+    "connect": "docker-compose exec bash",
+    "ps": "docker-compose ps"
+  }
+}
