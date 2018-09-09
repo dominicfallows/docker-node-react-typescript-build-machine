@@ -1,5 +1,6 @@
 {
   "name": "docker-node-react-typescript-build-machine",
+  "description": "Local Ubuntu development environment for parity across machines, for Node, React, React Native and TypeScript",
   "version": "1.0.0",
   "repository": "https://github.com/dominicfallows/docker-node-react-typescript-build-machine",
   "author": "Dominic Fallows <consultant@dominicfallows.uk>",
@@ -7,7 +8,10 @@
   "scripts": {
     "build": "docker-compose build",
     "start": "docker-compose up -d",
-    "connect": "docker-compose exec bash",
+    "stop": "docker-compose stop && docker-compose down",
+    "up": "yarn run start",
+    "down": "yarn run stop",
+    "bash": "docker-compose exec buildconsole bash",
     "ps": "docker-compose ps"
   }
 }
