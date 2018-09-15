@@ -7,11 +7,12 @@
   "license": "MIT",
   "scripts": {
     "build": "docker-compose build",
-    "start": "docker-compose up -d",
-    "stop": "docker-compose stop && docker-compose down",
-    "up": "yarn run start",
-    "down": "yarn run stop",
+    "start": "yarn run up",
+    "stop": "docker-compose stop",
+    "up": "docker-compose up -d",
+    "down": "docker-compose down",
     "bash": "docker-compose exec buildconsole bash",
-    "ps": "docker-compose ps"
+    "ps": "docker-compose ps",
+    "logs": "docker-compose logs"
   }
 }

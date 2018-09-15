@@ -1,0 +1,6 @@
+
+# Everything in shared folders
+data/*
+
+# but not the folders or certain files
+!data/README.md

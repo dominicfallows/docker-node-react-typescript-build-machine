@@ -1,15 +1,13 @@
 version: "3.3"
 services:
   buildconsole:
-    build: "."
+    build: ./build
     ports:
       - "3000-3100:3000-3100"
       - "5000-5100:5000-5100"
     container_name: buildconsole
     hostname: buildconsole
     volumes:
-      - "../:/projects"
-      - "./data:/data"
-    command: "/bin/bash"
+      - ./data:/data
     tty: true
     stdin_open: true
