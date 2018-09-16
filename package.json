@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "docker-compose build",
-    "start": "yarn run up",
+    "start": "docker-compose start",
     "stop": "docker-compose stop",
     "up": "docker-compose up -d",
     "down": "docker-compose down",

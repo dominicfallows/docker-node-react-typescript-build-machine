@@ -8,11 +8,12 @@ This repo has a few shortcut commands, which trigger docker-compose commands. Th
 
 | Action | Shortcut Command | Docker Compose Command |
 |--------|------------------|------------------------|
-| To create the build console for the first time, or after updates | `yarn build`| `docker-compose build` |
-| To start the build console | `yarn start` or `yarn up` | `docker-compose up -d` |
-| To stop the build console but not remove the container or networks created | `yarn stop` | `docker-compose stop` |
-| To stop the build console and remove the container and networks created | `yarn down` | `docker-compose down` |
-| To connect to the build console terminal | `yarn bash` | `docker-compose exec buildconsole bash` |
+| To (re)build the build console services | `yarn build`| `docker-compose build` |
+| To (re)create the container for the build console services | `yarn up` | `docker-compose up -d` |
+| To start the (existing) container for the build console services | `yarn start` | `docker-compose start` |
+| To stop the build console container, but not remove it or services | `yarn stop` | `docker-compose stop` |
+| To stop the build console container, remove it and its services | `yarn down` | `docker-compose down` |
+| To connect to the build console container terminal | `yarn bash` | `docker-compose exec buildconsole bash` |
 | To list containers and their status | `yarn ps` | `docker-compose ps` |
 | To see the container logs | `yarn logs` | `docker-compose logs` |
 
