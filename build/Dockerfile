@@ -15,7 +15,8 @@ ENV HOME=/root
 USER root
 WORKDIR $HOME
 
-RUN yarn global add typescript create-react-app create-react-native-app
+RUN yarn global add typescript create-react-app create-react-native-app \
+  babel-core babel-runtime jest
 
 COPY ./entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
